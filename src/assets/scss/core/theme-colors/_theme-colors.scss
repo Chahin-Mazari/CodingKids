@@ -1,0 +1,56 @@
+// Theme colors
+#main-wrapper {
+  &[data-layout="vertical"]{
+    /*This is for the logo bg*/
+    .topbar .top-navbar .navbar-header {
+      &[data-logobg="skin6"] {
+        background: $green;
+        .navbar-brand {
+          .dark-logo {
+            display:inline;
+          }
+          .light-logo {
+            display:none;
+          }
+        }
+        .nav-toggler,
+        .topbartoggler {
+          color: $yellow;
+        }
+      }
+    }
+    .topbar .navbar-collapse,
+    .topbar {
+      &[data-navbarbg="skin1"] {
+        background: $skin1;
+      }
+    }
+    /*This is for the sidebar bg*/
+    .left-sidebar {
+      &[data-sidebarbg="skin6"] {
+        background: $green;
+        .sidebar-nav {
+          ul {
+            background: $white;
+            .sidebar-item {
+              &.active {
+                > .sidebar-link {
+                  color: $black;
+                  i {
+                    color: $yellow;
+                  }
+                }
+              }
+              .sidebar-link {
+                color: $sidebar-text-dark;
+                i {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
